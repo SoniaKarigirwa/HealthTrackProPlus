@@ -10,12 +10,10 @@ const patientData = {
     }]
 };
 
-// Get the canvas element
 const ctx = document.getElementById('patientChart').getContext('2d');
 
-// Create a chart
 const patientChart = new Chart(ctx, {
-    type: 'line', // Specify the chart type
+    type: 'line',
     data: patientData,
     options: {
         scales: {
